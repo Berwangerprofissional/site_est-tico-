@@ -1,0 +1,108 @@
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+main, aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    padding: 20px;
+}
+main {
+    background-color: #f0f0f0;
+    width: 70%;
+}
+aside {
+    background-color: #e0e0e0;
+    width: 20%;
+}
+.carousel {
+    width: 70%;
+    position: left;
+    width: 100%;
+    max-width: 500px; /* Define a largura máxima do carrossel */
+    margin: auto; /* Centraliza o carrossel na página */
+    overflow: hidden; /* Esconde as partes dos slides que ultrapassam o contêiner */
+    }
+    
+    .slides {
+        display: flex; /* Exibe os slides em linha */
+    }
+    
+    .slide {
+        flex: 0 0 100%; /* Define a largura de cada slide */
+        height: 200px; /* Define a altura dos slides */
+    }
+    
+    #slide-img1 {
+        background-image: url('jardim1.jpg'); /* Define a imagem de fundo do primeiro slide */
+    }
+    
+    #slide-img2 {
+        background-image: url('jardim1.jpg'); /* Define a imagem de fundo do segundo slide */
+    }
+    
+    #slide-img3 {
+        background-image: url('jardim3.jpg'); /* Define a imagem de fundo do terceiro slide */
+    }
+    
+    input[type="radio"] {
+        display: none; /* Esconde os botões de rádio */
+    }
+    
+    .navigation {
+        position: absolute;
+        bottom: 10px; /* Define a distância da navegação ao fundo */
+        left: 50%; /* Centraliza a navegação horizontalmente */
+        transform: translateX(-50%);
+    }
+    
+    .navigation label {
+        cursor: pointer;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    
+    input[type="radio"]:checked + .navigation label {
+        background-color: #333; /* Muda a cor do botão de navegação quando o slide correspondente está selecionado */
+    }
+.section_2 {
+    background-color: blue;
+    color: #fff;
+    padding: 1px;
+}
+@media only screen and (max-width: 600px) {
+    main, aside {
+        display: block;
+        width: 100%;
+    }
+}
